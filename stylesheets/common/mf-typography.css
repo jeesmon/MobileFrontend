@@ -5,7 +5,7 @@ html {
 }
 /* = 16pt */
 body {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "customFont", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1em;
   line-height: 1.3333333333333333em;
   color: #252525;
@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Georgia", serif;
+  font-family: "customFont", "Georgia", serif;
   margin-top: 14pt;
   margin-bottom: 9pt;
 }
@@ -30,15 +30,6 @@ h6 button {
 }
 p {
   margin-bottom: 8pt;
-}
-ol ol,
-ul ol,
-ol ul,
-ul ul {
-  margin-left: 1em;
-}
-dl {
-  margin-left: 1em;
 }
 h1 {
   font-size: 1.833em;
@@ -74,8 +65,6 @@ sup {
 }
 #content_wrapper {
   position: relative;
-}
-#content_wrapper .content {
   margin: 0 23px 0 23px;
 }
 #content_wrapper .section h3:first-child {
@@ -93,7 +82,7 @@ sup {
   text-align: center;
 }
 input.search {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "customFont", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1em;
 }
 #footer {
