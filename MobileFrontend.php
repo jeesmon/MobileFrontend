@@ -169,7 +169,6 @@ $wgResourceModules['mobile.startup'] = array(
 		'javascripts/common/mf-application.js',
 		'javascripts/common/mf-history.js',
 		'javascripts/common/mf-settings.js',
-		'javascripts/modules/mf-search.js',
 		'javascripts/modules/mf-banner.js',
 		'javascripts/modules/mf-stop-mobile-redirect.js',
 	),
@@ -183,12 +182,16 @@ $wgResourceModules['mobile.beta.jquery'] = array(
 	'dependencies' => array( 'mobile.production-jquery', 'mediawiki.jqueryMsg' ),
 	'styles' => array(
 		'stylesheets/modules/mf-watchlist.css',
+		'stylesheets/modules/mf-photo.css',
 	),
 	'scripts' => array(
+		'javascripts/common/mf-history-jquery.js',
 		'javascripts/modules/mf-toggle-dynamic.js',
+		'javascripts/modules/mf-search.js',
 		'javascripts/modules/mf-watchlist.js',
 		'javascripts/modules/mf-languages.js',
 		'javascripts/modules/mf-last-modified.js',
+		'javascripts/modules/mf-photo.js',
 	),
 	'raw' => true,
 	'localBasePath' => $localBasePath,
@@ -209,7 +212,10 @@ $wgResourceModules['mobile.beta.jquery'] = array(
 $wgResourceModules['mobile.production-only'] = array(
 	'dependencies' => array( 'mobile.startup' ),
 	'styles' => array( 'stylesheets/modules/mf-toggle.css' ),
-	'scripts' => array( 'javascripts/modules/mf-toggle.js' ),
+	'scripts' => array(
+		'javascripts/modules/mf-toggle.js',
+		'javascripts/modules/mf-search.js',
+	),
 	'raw' => true,
 	'localBasePath' => dirname( __FILE__ ),
 	'remoteExtPath' => 'MobileFrontend',
@@ -301,10 +307,8 @@ $wgResourceModules['mobile.alpha'] = array(
 	'styles' => array(
 		'stylesheets/modules/mf-random.css',
 		'stylesheets/modules/mf-tables.css',
-		'stylesheets/modules/mf-photo.css',
 	),
 	'scripts' => array(
-		'javascripts/modules/mf-photo.js',
 		'javascripts/modules/mf-random.js',
 		'javascripts/modules/mf-tables.js',
 		'javascripts/modules/mf-user-gallery.js',
@@ -553,4 +557,4 @@ $wgDeviceDetectionClass = 'DeviceDetection';
  * Will force login-related links to use https if set to true, otherwise
  * login-related links will use whatever protocol is in use by the user
  */
-$wgMFForceSecureLogin = true;
+$wgMFForceSecureLogin = false;
