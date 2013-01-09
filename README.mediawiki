@@ -1,4 +1,7 @@
 = MobileFrontend Extension =
+
+Fork of https://gerrit.wikimedia.org/r/p/mediawiki/extensions/MobileFrontend.git
+
 The MobileFrontend extension adds a mobile view to your mediawiki instance.
 
 == Installation ==
